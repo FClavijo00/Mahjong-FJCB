@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,h4,p {
+    margin: 0px;
+}
+
+.container {
+    font-family: 'Lobster', cursive;
+    color: whitesmoke;
+    font-size: 75%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 250px 100px;
+    row-gap: 1em;
+    grid-auto-flow: row;
+    width: 100%;
+    background: url(fondo.png);
+    background-repeat: repeat;
+
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    margin-top: 1em;
+    padding: 1em;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+main {
+    height: 300px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+    justify-self: center;
+}
+
+main div {
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 2em;
+    align-items: center;
+    text-align: center;
+}
+
+main div a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+footer {
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    padding: 1em;
+    border-top: 1px solid whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+
+@media screen and (min-width: 788px) {
+.container {
+    font-size: 1.2em;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 150px 400px 150px;
+}
+
+main div {
+    margin: 30px;
+    font-size: 3em;
+}
+
+footer img {
+    height: 60px;
+    width: 60px;
+}
+}
+
+@media screen and (min-width:1180px) {
+.container {
+    font-size: 1.7em;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 200px 400px 150px;
+}
+
+main div {
+    margin: 10px;
+    font-size: 3em;
+}
+
+footer img {
+    height: 65px;
+    width: 65px;
+}
+}

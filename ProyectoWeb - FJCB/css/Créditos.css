@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    justify-self: center;
+}
+
+marquee {
+    direction: up;
+    behavior: scrolls;
+    font-size: 2em;
+    direction: unset;
+}
